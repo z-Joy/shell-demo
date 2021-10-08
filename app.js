@@ -8,7 +8,7 @@ const port = 3333;
 const server = http.createServer((req, res) => {
   if (req.url === '/install') {
     console.log(111);
-    execFile(cwd + './install.sh', (err, studot) => {
+    execFile(cwd + '/install.sh', (err, studot) => {
       console.log(err, studot);
     })
   }
